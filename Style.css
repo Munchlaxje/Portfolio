@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Georgia, serif;
+    Font-weight: 600;
+    Font-size: 20px;
+}
+
+header {
+    background-color: #D2B4DE;
+    color: #Black;
+    padding: 50px 0;
+}
+.logoright {
+    margin-right: 0px !important;
+    margin-left: auto !important;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #777;
+}
+/*CV Image*/
+.image-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+.image-container img {
+    width: 50%; /* Adjust the width as needed */
+
+}
+
+/* Gallery */
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*contactformulier*/
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/*googlemaps*/
+#map-container {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+}
+
+/* Hamburger Menu Styles */
+
+@media (max-width: 768px) {
+    #menu-toggle:checked + #menu {
+        display: block;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #D2B4DE;
+        padding: 10px;
+    }
+
+    #menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}
